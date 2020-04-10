@@ -4,6 +4,16 @@
 <head>
   <meta charset="utf-8">
   <title>My Contact</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <style media="screen">
+    hr {
+      border-style: none;
+      border-top-style: solid;
+      width: 100%;
+      border-width: 2px;
+      border-color: grey;
+    }
+  </style>
 </head>
 
 <body>
@@ -11,17 +21,19 @@
   <p>Phone: xxx-000</p>
   <p>Email:xxxx</p>
   <hr>
-      <form action="mailto:arumikawim@gmail.com" method="post" enctype="text/plain">
-        <label for="text">Your Name</label>
-        <input type="text" name="yourname" value=""><br>
-        <label for="text">Your Email</label>
-        <input type="email" name="yourEmail" value=""><br>
-        <label for="text">Your Message</label>
-        <textarea name="YourMessage" rows="10" cols="30"></textarea>
-        <input type="submit" name="">
+  <form action="mailto:arumikawim@gmail.com" method="post" enctype="text/plain">
+    <fieldset>
+      <legend>Contact Form</legend>
+      <label for="text">Your Name</label>
+      <input type="text" name="yourname" value=""><br>
+      <label for="text">Your Email</label>
+      <input type="email" name="yourEmail" value=""><br>
+      <label for="text">Your Message</label>
+      <textarea name="YourMessage" rows="10" cols="30"></textarea>
+      <input type="submit" name="">
+    </fieldset>
 
-
-      </form>
+  </form>
 </body>
 
 </html>
